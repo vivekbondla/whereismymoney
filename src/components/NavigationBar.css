@@ -1,0 +1,82 @@
+.nav {
+  display: flex;
+  background-color:linear-gradient(to bottom right, rgb(0, 0, 0) , rgb(239, 192, 81) );
+  border-bottom: 1px solid white;
+  padding: 10px;
+  justify-content: space-between;
+  /* position: sticky; */
+}
+.nav > h3 {
+  font-family: cursive;
+  font-size: large;
+  color: white;
+}
+.nav a{
+  text-decoration: none;
+  color:white;
+  font-family: cursive;
+  font-size: large;
+  
+}
+.options {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.nav button{
+  border: none;
+  border-radius: 5px;
+  padding:  0 0.7rem;
+  background: transparent;
+  color: white;
+  font-family: cursive;
+  font-size: large;
+}
+
+.nav button:hover{
+  cursor: pointer;
+  
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width : 768px){
+  .hamburger{
+    display: block;
+  }
+
+  .options{
+    display: none;
+  }
+  .options-mobile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    height: 10rem;
+    width: 100%;
+    margin-top: 26px;
+    
+    
+
+  }
+  .nav a{
+    font-size: small;
+  }
+  
+}
+

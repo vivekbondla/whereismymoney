@@ -1,0 +1,127 @@
+.expense_form {
+  width: 90%;
+  text-align: center;
+  margin: 7rem auto;
+}
+.expense_form p {
+  color: rgba(225, 185, 40, 0.895);
+  font-family: monospace;
+  font-style: italic;
+  font-size: xx-large;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.selectinput {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+}
+/* .select label {
+  text-align: center;
+  padding: 10px;
+  font-size: larger;
+} */
+.selectinput select {
+  flex-grow: 0.35;
+  /* border: 1px solid blue; */
+  padding: 0.5rem 0.8rem;
+  width: 10%;
+  border: none;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 8px rgb(255, 253, 253); */
+  /* margin: 0px 0px 20px 115px; */
+
+  font-family: cursive;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.amount input {
+  float: left;
+  width: 30%;
+  font: inherit;
+  border: none;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 8px rgb(255, 253, 253); */
+  /* background: #dde3e6; */
+  padding: 0.6rem 0.7rem;
+  margin-top: 1.5rem;
+  background: white;
+
+  font-family: cursive;
+}
+
+.textnotes{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+textarea {
+  width: 75%;
+  font: inherit;
+  border: 1px solid burlywood;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 8px rgb(255, 253, 253); */
+  /* background: #ffffff; */
+  padding: 0.6rem 0.7rem;
+  margin-top: 1.5rem;
+  color: black;
+  background: white;
+
+  font-family: cursive;
+}
+
+.expense_form::placeholder {
+  color: white;
+}
+
+.actions button {
+  margin: 1rem;
+  width: 35%;
+  padding: 0.8rem 0.7rem;
+  background-color: rgb(131, 136, 207);
+  border-radius: 5px;
+  border: none;
+  background: black;
+  color: rgba(225, 185, 40, 0.895);
+  font-family: cursive;
+}
+.actions button:hover {
+  cursor: pointer;
+  background: rgba(8, 8, 8, 0.771);
+}
+
+@media screen and (max-width:768px) {
+  .selectinput{
+    margin-top: 15px;
+  }
+  .selectinput select{
+    /* width: 72%; */
+    flex-grow: 1;
+    margin: 0;
+  }
+  .amount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .amount input{
+    width: auto;
+  }
+
+  textarea{
+    width: 100%;
+  }
+  
+    
+    
+}

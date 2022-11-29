@@ -1,0 +1,69 @@
+.signup {
+  width: 90%;
+  max-width: 30rem;
+
+  margin: 7rem auto;
+  text-align: center;
+}
+
+.signup p{
+  color: white;
+  font-family: monospace;
+  font-size: x-large;
+  font-style: italic;
+}
+
+.signup input {
+  width: 70%;
+  font: inherit;
+  border: 1px solid rgb(152, 241, 243);
+  border-radius: 5px;
+  background:white;
+ 
+  font-family: cursive;
+  padding: 0.6rem 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.signup button {
+  margin: 1rem;
+  width: 75%;
+  padding: 0.8rem 0.7rem;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  color:chocolate;
+  font-family: cursive;
+  font-style: italic;
+}
+.signup button:hover{
+  cursor:pointer;
+
+}
+.signup a {
+  text-decoration: none;
+  color: black
+}
+::placeholder{
+  color: rgba(0, 0, 0, 0.707)
+}
+
+@media (max-width:767px) {
+  .card{
+    padding: 0.6rem;
+  }
+  .signup p{
+    
+    font-size: large;
+    
+  }
+  .signup input {
+    padding: 0.3rem 0.4rem;
+  }
+  .signup button {
+    
+    padding: 0.4rem 0.3rem;
+    
+  }
+  
+}

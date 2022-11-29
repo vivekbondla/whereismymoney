@@ -1,0 +1,93 @@
+.expense_item {
+  display: flex;
+
+  margin: 5px 0px 5px 0px;
+  /* background-color: rgba(191, 199, 200, 0.745); */
+  justify-content: center;}
+
+.card {
+  flex-grow: 1;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+  color: aliceblue;
+  font-family:cursive;
+}
+/* tfoot strong{
+  color: black;
+  font-family:cursive;
+} */
+
+.notes{
+    width: 380px;
+    
+}
+.date{
+    width: 250px;
+}
+.amounts {
+  width: 100px;
+}
+.sno {
+  width: 60px;
+}
+.button {
+  width: 100px;
+}
+.button button{
+  border: none;
+  
+  padding:  0 0.7rem;
+  background: transparent;
+  color: white;
+  font-family: cursive;
+  
+}
+ .button button:hover{
+  cursor: pointer;
+  color: red;
+
+}
+
+.list_select{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+ select {
+    text-align: center;
+    flex-grow: 0.25;
+    /* border: 1px solid blue; */
+    padding: 0.5rem 0.8rem;
+    width: 10%;
+    margin: 15px;
+    border-style: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+  }
+
+  @media screen and (max-width : 768px) {
+    .list_select select{
+      width :35%
+    }
+    table {
+      
+      table-layout: auto;
+    
+    
+  }
+  .table-container{
+    overflow: scroll;
+  }
+}
+
+

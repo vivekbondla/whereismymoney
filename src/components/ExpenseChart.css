@@ -1,0 +1,40 @@
+.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 25px;
+
+  align-self: center;
+}
+.list {
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+.chart p {
+  color: white;
+  font-family: monospace;
+  font-style: italic;
+  font-size: xx-large;
+}
+
+@media screen and (max-width: 768px) {
+
+  .recharts-responsive-container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* width: 400px;
+    height: 500px; */
+  }
+  .recharts-wrapper{
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
+
+    
+}
