@@ -115,7 +115,7 @@ textarea {
     width: 100%;
   }
   .amount input{
-    width: auto;
+    width: -webkit-fill-available;
   }
 
   textarea{
