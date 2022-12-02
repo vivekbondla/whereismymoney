@@ -1,7 +1,9 @@
 * {
   margin: 0;
+  
  
 }
+
 html{
   background-image: linear-gradient(to top right, rgb(0, 0, 0)  , rgb(239, 192, 81)  );
   min-height: 100%;

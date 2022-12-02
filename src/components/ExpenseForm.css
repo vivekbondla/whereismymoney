@@ -35,7 +35,7 @@ form {
   /* box-shadow: 0 2px 8px rgb(255, 253, 253); */
   /* margin: 0px 0px 20px 115px; */
 
-  font-family: cursive;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .amount {
@@ -55,7 +55,7 @@ form {
   margin-top: 1.5rem;
   background: white;
 
-  font-family: cursive;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .textnotes{
@@ -76,7 +76,7 @@ textarea {
   color: black;
   background: white;
 
-  font-family: cursive;
+  font-family:'Times New Roman', Times, serif;
 }
 
 .expense_form::placeholder {
@@ -92,7 +92,7 @@ textarea {
   border: none;
   background: black;
   color: rgba(225, 185, 40, 0.895);
-  font-family: cursive;
+  font-family: 'Times New Roman', Times, serif;
 }
 .actions button:hover {
   cursor: pointer;
