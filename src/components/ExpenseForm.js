@@ -101,7 +101,7 @@ const ExpenseForm = (props) => {
               onChange={amountHandler}
             />
 
-            <input value={date} type="date" onChange={dateHandler} />
+            <input placeholder="mm/dd/yyy" value={date} type="date" onChange={dateHandler} />
           </div>
           <div className="textnotes">
             <textarea
