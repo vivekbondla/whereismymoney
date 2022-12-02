@@ -6,7 +6,7 @@ import "./InputForm.css";
 import AuthContext from "../../store/auth-context";
 import LoadingSpinner from "../../UI/LoadingSpinner";
 
-
+console.log(process.env.REACT_APP_BACKEND_URL)
 
 const SignUpPage = () => {
   const [email, setEmail] = useState("");
@@ -34,7 +34,7 @@ const SignUpPage = () => {
     setIsLoading(true)
 
     try {
-      const fetchResult = await fetch("http://localhost:5000/signup", {
+      const fetchResult = await fetch(`${process.env.REACT_APP_BACKEND_URL}/signup`, {
         method: "POST",
         body: JSON.stringify({
           email: email,

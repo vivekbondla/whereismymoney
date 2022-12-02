@@ -21,7 +21,7 @@ const ExpenseForm = (props) => {
     // send this data to backend
     setIsLoading(true);
     try {
-      const result = await fetch("http://localhost:5000/api/storeexpense", {
+      const result = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/storeexpense`, {
         method: "POST",
         body: JSON.stringify({
           category: category,

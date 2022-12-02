@@ -17,7 +17,7 @@ const FilterExpense =(props)=>{
           <option value="Investment">Investment</option>
           <option value="Shopping">Shopping</option>
           <option value="Beverages">Beverages</option>
-          <option value="others">Others</option>
+          <option value="Others">Others</option>
         </select>
         <select id='month'  value={props.selectedmonth} onChange={monthChangeHandler}>
           <option>-select month-</option>

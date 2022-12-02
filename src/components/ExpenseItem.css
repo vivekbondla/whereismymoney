@@ -88,6 +88,9 @@ td {
   .table-container{
     overflow: scroll;
   }
+  .table-container::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 

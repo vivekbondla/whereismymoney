@@ -20,7 +20,7 @@ const ListOfExpenses = (props) => {
       setIsLoading(true);
       try {
         const fetchResults = await fetch(
-          `http://localhost:5000/api/expense/${userId}`,
+          `${process.env.REACT_APP_BACKEND_URL}/api/expense/${userId}`,
           {
             method: "GET",
             headers: {
@@ -76,7 +76,7 @@ const ListOfExpenses = (props) => {
     try{
       setIsLoading(true);
 
-      await fetch(`http://localhost:5000/api/expense/${deletedExpenseId}`,{
+      await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/expense/${deletedExpenseId}`,{
         method : 'DELETE',
         headers : {'Content-Type':'application/json'}
       })

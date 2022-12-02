@@ -41,7 +41,7 @@ const ExpenseChart = (props) => {
 
   return (
     <div className="chart">
-      <p> Total Expenses in this month in graphical representation</p>
+      <p> Graphical representation of Total Expenses in this month</p>
 
       <PieChart width={400} height={350}>
         <Pie

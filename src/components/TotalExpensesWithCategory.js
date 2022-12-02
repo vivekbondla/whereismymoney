@@ -12,10 +12,10 @@ const TotalExpensesWithCategory = (props) => {
   }
   //   console.log(filteringItemsOnMonth)
   const others = filteringItemsOnMonth
-    .filter((item) => item.category === "others")
+    .filter((item) => item.category === "Others")
     .reduce((acc, item) => acc + item.amount, 0);
   const food = filteringItemsOnMonth
-    .filter((item) => item.category === "food")
+    .filter((item) => item.category === "Food")
     .reduce((acc, item) => acc + item.amount, 0);
   const shopping = filteringItemsOnMonth
     .filter((item) => item.category === "Shopping")

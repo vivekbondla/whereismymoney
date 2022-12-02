@@ -21,7 +21,7 @@ const LoginPage = () => {
     setIsLoading(true);
 
     try {
-      const fetchResult = await fetch("http://localhost:5000/login", {
+      const fetchResult = await fetch(`${process.env.REACT_APP_BACKEND_URL}/login`, {
         method: "POST",
         body: JSON.stringify({
           email: email,
