@@ -117,13 +117,7 @@ textarea {
   .amount input{
     width: -webkit-fill-available;
   }
-input[type="date"]::before{
-    color: #999;
-    content: attr(placeholder) ": ";
-}
-input[type="date"]:focus::before {
-    content: "" !important;
-}
+
   
   textarea{
     width: 100%;
