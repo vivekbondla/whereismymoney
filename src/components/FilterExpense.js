@@ -8,6 +8,10 @@ const FilterExpense =(props)=>{
         props.onMonthChange(event.target.value)
 
     }
+    const yearChangeHandler =(event)=>{
+        props.onYearChange(event.target.value)
+
+    }
     return(
         <div className="list_select">
         <select id="category" value={props.selectedcategory} onChange={categoryChangeHandler}>
@@ -33,6 +37,15 @@ const FilterExpense =(props)=>{
           <option value="9">october</option>
           <option value="10">november</option>
           <option value="11">december</option>
+        </select>
+        <select id='year'  value={props.selectedyear} onChange={yearChangeHandler}>
+          <option>-select year-</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
         </select>
       </div>
     )
