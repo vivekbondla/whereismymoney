@@ -4,29 +4,29 @@ import ExpenseChart from "./ExpenseChart";
 const TotalExpensesWithCategory = (props) => {
   console.log(props.items);
   console.log(props.month);
-  let filteringItemsOnMonth;
+  let filteringItemsOnMonthandYear;
   if (props.items) {
-    filteringItemsOnMonth = props.items.filter((expense) => {
-      return new Date(expense.date).getMonth() == props.month;
+    filteringItemsOnMonthandYear = props.items.filter((expense) => {
+      return new Date(expense.date).getMonth() == props.month && new Date(expense.date).getFullYear() == props.year;
     });
   }
   //   console.log(filteringItemsOnMonth)
-  const others = filteringItemsOnMonth
+  const others = filteringItemsOnMonthandYear
     .filter((item) => item.category === "Others")
     .reduce((acc, item) => acc + item.amount, 0);
-  const food = filteringItemsOnMonth
+  const food = filteringItemsOnMonthandYear
     .filter((item) => item.category === "Food")
     .reduce((acc, item) => acc + item.amount, 0);
-  const shopping = filteringItemsOnMonth
+  const shopping = filteringItemsOnMonthandYear
     .filter((item) => item.category === "Shopping")
     .reduce((acc, item) => acc + item.amount, 0);
-  const investment = filteringItemsOnMonth
+  const investment = filteringItemsOnMonthandYear
     .filter((item) => item.category === "Investment")
     .reduce((acc, item) => acc + item.amount, 0);
-  const home = filteringItemsOnMonth
+  const home = filteringItemsOnMonthandYear
     .filter((item) => item.category === "Home")
     .reduce((acc, item) => acc + item.amount, 0);
-  const beverages = filteringItemsOnMonth
+  const beverages = filteringItemsOnMonthandYear
     .filter((item) => item.category === "Beverages")
     .reduce((acc, item) => acc + item.amount, 0);
   // console.log(others, food, shopping, investment, home, beverages);
