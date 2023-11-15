@@ -113,9 +113,12 @@ textarea {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+   
   }
   .amount input{
-    width: -webkit-fill-available;
+    /* width: -webkit-fill-available; */
+    width: 94%;
+    padding: 0.6rem 0.7rem;
   }
 
   
