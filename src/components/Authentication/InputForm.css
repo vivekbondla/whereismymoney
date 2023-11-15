@@ -15,12 +15,13 @@
 
 .signup input {
   width: 70%;
-  font: inherit;
+  font: medium;
   border: 1px solid rgb(152, 241, 243);
   border-radius: 5px;
   background:white;
  
-  font-family: cursive;
+  /* font-family: cursive; */
+  font-family: 'Times New Roman', Times, serif;
   padding: 0.6rem 0.7rem;
   margin-top: 1.5rem;
 }
@@ -34,7 +35,7 @@
   border: none;
   color:chocolate;
   font-family: 'Times New Roman', Times, serif;
-  font-size: large;
+  font-size: medium;
 }
 .signup button:hover{
   cursor:pointer;
