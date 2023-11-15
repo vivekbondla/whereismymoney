@@ -176,7 +176,7 @@ const ListOfExpenses = (props) => {
           </table>
         </div>
       )}
-      <TotalExpensesWithCategory items={loadedExpenses} month={filterMonth} />
+      <TotalExpensesWithCategory items={loadedExpenses} month={filterMonth} year={filterYear}/>
     </>
   );
 };
